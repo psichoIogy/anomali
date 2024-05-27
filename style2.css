@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(51, 64, 185);
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%; /* Kurangi padding untuk membuat header lebih kecil */
+    background: rgb(235, 235, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header h2 {
+    color: black;
+    font-size: 1.5rem; /* Sesuaikan ukuran font */
+    margin: 0; /* Pastikan tidak ada margin default yang menambah ukuran */
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+
+.about {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.about-img {
+    position: relative;
+    border-radius: 2rem;
+    margin: 0 20px;
+    overflow: hidden;
+    width: 300px; /* Sesuaikan lebar gambar */
+    height: auto;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+
+.about-img:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.about-button input[type="submit"] {
+    width: 48%; /* Dua tombol berbagi lebar */
+    padding: 0.8rem; /* Padding untuk ukuran tombol */
+    font-size: 1.2rem; /* Ukuran font */
+    border: none;
+    border-radius: .8rem; /* Border radius */
+    cursor: pointer;
+    background-color: rgb(235, 235, 7);
+    transition: .5s ease;
+    margin: 0; /* Hapus margin default */
+    text-align: center; /* Pastikan teks berada di tengah */
+    box-sizing: border-box; /* Sertakan padding dalam lebar total */
+}
+
+.about-button input[type="submit"]:hover {
+    background-color: rgb(179, 179, 8); /* Warna latar saat hover */
+    color: white;
+    box-shadow: 0 0 1rem black;
+}
